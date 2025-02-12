@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<!-- Declara que este é um documento HTML5 e define o idioma como inglês -->
+
+<head>
+    <meta charset="UTF-8"> 
+    <!-- Define a codificação de caracteres como UTF-8 para permitir caracteres especiais corretamente -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <!-- Faz com que a página se adapte a diferentes tamanhos de tela, como celulares e computadores -->
+
+    <title>Mais Sobre Tabela</title> 
+    <!-- Define o título da página, que aparece na aba do navegador -->
+</head>
+
+<body> 
+    <!-- Início do corpo da página, onde o conteúdo visível será exibido -->
+
+    <h2>Produtos</h2> 
+    <!-- Cria um título de nível 2 (h2) chamado "Produtos" -->
+
+    <table border="2" width="100%"> 
+    <!-- Cria uma tabela com borda de 2 pixels e largura de 100% da tela -->
+
+        <tr> 
+        <!-- Inicia uma nova linha na tabela -->
+
+            <th>Código</th> 
+            <!-- Cria um cabeçalho de coluna chamado "Código" -->
+
+            <th>Produto</th> 
+            <!-- Cria um cabeçalho de coluna chamado "Produto" -->
+
+            <th>Preço</th> 
+            <!-- Cria um cabeçalho de coluna chamado "Preço" -->
+        </tr> 
+        <!-- Fecha a linha do cabeçalho da tabela -->
+
+        <tr> 
+        <!-- Inicia uma nova linha da tabela para exibir um produto -->
+
+            <td>001</td> 
+            <!-- Adiciona uma célula com o código do produto "001" -->
+
+            <td>Notebook</td> 
+            <!-- Adiciona uma célula com o nome do produto "Notebook" -->
+
+            <td>R$ 2.500,99</td> 
+            <!-- Adiciona uma célula com o preço do notebook -->
+        </tr> 
+        <!-- Fecha essa linha da tabela -->
+
+        <tr> 
+        <!-- Inicia outra linha para exibir outro produto -->
+
+            <td>002</td> 
+            <!-- Adiciona uma célula com o código do produto "002" -->
+
+            <td>Tablet</td> 
+            <!-- Adiciona uma célula com o nome do produto "Tablet" -->
+
+            <td>R$ 999,99</td> 
+            <!-- Adiciona uma célula com o preço do tablet -->
+        </tr> 
+        <!-- Fecha essa linha da tabela -->
+
+        <tr> 
+        <!-- Inicia outra linha para um produto diferente -->
+
+            <td>003</td> 
+            <!-- Adiciona uma célula com o código do produto "003" -->
+
+            <td> 
+                <img src="../Imagens/golden.jpg" alt="" width="200"> 
+                <!-- Insere uma imagem na célula da segunda coluna, buscando o arquivo 'golden.jpg' na pasta 'Imagens'. 
+                O "width=200" ajusta a largura da imagem para 200 pixels. O "alt" está vazio, mas poderia ser usado 
+                para descrever a imagem caso ela não seja carregada. -->
+            </td>
+
+            <td>Não está à venda ❤️</td> 
+            <!-- Adiciona um texto indicando que esse item não está à venda -->
+        </tr> 
+        <!-- Fecha essa linha da tabela -->
+
+        <tr> 
+        <!-- Inicia uma nova linha para exibir descontos -->
+
+            <td rowspan="2">Desconto</td> 
+            <!-- Cria uma célula chamada "Desconto". O atributo 'rowspan="2"' faz com que essa célula ocupe duas linhas verticalmente. -->
+
+            <td colspan="2">cupom1 -R$ 10</td> 
+            <!-- Cria uma célula que ocupa duas colunas usando 'colspan="2"', e exibe o primeiro desconto de R$ 10 -->
+        </tr> 
+        <!-- Fecha essa linha -->
+
+        <tr> 
+        <!-- Inicia a segunda linha do desconto -->
+
+            <td colspan="2">cupom1 -R$ 12</td> 
+            <!-- Cria outra célula que ocupa duas colunas e exibe o segundo desconto de R$ 12 -->
+        </tr> 
+        <!-- Fecha essa linha -->
+
+        <tr> 
+        <!-- Inicia a última linha para mostrar o total da compra -->
+
+            <td>Total</td> 
+            <!-- Cria uma célula com o texto "Total" -->
+
+            <td colspan="2">R$ 3.478,98</td> 
+            <!-- Cria uma célula que ocupa duas colunas e exibe o valor total da compra -->
+        </tr> 
+        <!-- Fecha essa linha -->
+
+    </table> 
+    <!-- Fecha a tabela -->
+</body>
+<!-- Fecha o corpo da página -->
+
+</html>
+<!-- Fecha o documento HTML -->
