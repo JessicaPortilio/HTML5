@@ -1,0 +1,63 @@
+<!-- Declaração do tipo de documento HTML -->
+<!DOCTYPE html>
+<html lang="pt-BR"> <!-- Início do código HTML, definindo o idioma como inglês -->
+
+<head>
+    <meta charset="UTF-8"> <!-- Define a codificação de caracteres como UTF-8 (suporta caracteres especiais) -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Permite um design responsivo -->
+    <title>Contato</title> <!-- Define o título da página que aparece na aba do navegador -->
+</head>
+
+<body background="./images/fundo2.png"> <!-- Define uma imagem de fundo para a página -->
+    
+    <!-- Criação de uma tabela para organizar os elementos na página -->
+    <table border="0" width="900" align="center"> <!-- Define uma tabela sem bordas, com largura de 900px e centralizada -->
+        
+        <!-- Linha da tabela contendo o logotipo e o menu de navegação -->
+        <tr>
+            <td height="89"><img src="./images/logo.png" alt="logo.png"></td> <!-- Adiciona o logotipo com altura de 89px -->
+            <td align="right"> <!-- Alinha o menu de navegação à direita -->
+                <a href="./index.html">Home</a> | <!-- Link para a página inicial -->
+                <a href="./quemsomos.html">Quem Somos</a> | <!-- Link para a página "Quem Somos" -->
+                <a href="">Contato</a> <!-- Link da página de contato (já está na página atual, então está vazio) -->
+            </td>
+        </tr>
+        
+        <!-- Linha contendo o título e uma breve descrição da página de contato -->
+        <tr>
+            <td colspan="2"> <!-- Mescla as duas colunas para ocupar toda a largura da tabela -->
+                <h2>Entre em contato</h2> <!-- Título principal da seção -->
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque justo orci, ornare sed
+                    imperdiet vel, pellentesque vel erat.</p> <!-- Parágrafo de texto fictício -->
+            </td>
+            <hr> <!-- Linha horizontal para separar os conteúdos -->
+        </tr>
+        
+        <!-- Linha contendo o formulário de contato -->
+        <tr>
+            <td>
+                <form action=""> <!-- Início do formulário (o atributo "action" define para onde os dados serão enviados) -->
+                    Seu e-mail: <br> <!-- Rótulo para o campo de e-mail -->
+                    <input type="text" name="email" id=""><br> <!-- Campo de entrada para o e-mail do usuário -->
+    
+                    Assunto: <br> <!-- Rótulo para o campo de assunto -->
+                    <input type="text" name="assunto" id=""><br> <!-- Campo de entrada para o assunto -->
+    
+                    Descrição: <br> <!-- Rótulo para o campo de descrição -->
+                    <textarea name="descricao" id=""></textarea><br> <!-- Área de texto para o usuário escrever sua mensagem -->
+    
+                    <input type="submit" value="enviar"> <!-- Botão para enviar o formulário -->
+                </form>
+            </td>
+        </tr>
+        
+        <!-- Linha contendo o rodapé da página -->
+        <tr>
+            <td colspan="2" align="center"> <!-- Mescla as colunas e centraliza o texto -->
+                <h4>Todos os direitos reservados</h4> <!-- Texto informando direitos autorais -->
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>
