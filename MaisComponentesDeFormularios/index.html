@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<!-- Declara que este é um documento HTML5 e define o idioma da página como inglês -->
+
+<head>
+    <meta charset="UTF-8"> 
+    <!-- Define a codificação de caracteres como UTF-8, permitindo o uso correto de acentos e caracteres especiais -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <!-- Configura a página para se adaptar a diferentes tamanhos de tela, como celulares e computadores -->
+
+    <title>Mais Sobre Componentes de Formulários</title> 
+    <!-- Define o título da página, que aparece na aba do navegador -->
+</head>
+
+<body> 
+    <!-- Início do corpo da página, onde o conteúdo visível será exibido -->
+
+    <h2>Login</h2> 
+    <!-- Cria um título de nível 2 (h2) chamado "Login" para indicar a seção do formulário -->
+
+    <form action=""> 
+    <!-- Inicia um formulário onde os usuários podem inserir seus dados. O atributo 'action' define para onde os dados serão enviados, 
+    mas está vazio, então os dados não serão enviados para nenhum servidor -->
+
+        Login:<br> 
+        <!-- Exibe o texto "Login:" antes do campo de entrada, seguido de uma quebra de linha para melhor organização -->
+
+        <input type="text" name="login" id=""><br> 
+        <!-- Cria um campo de entrada de texto onde o usuário pode digitar seu login. 
+        O atributo 'name="login"' indica que esse campo será identificado como "login" ao enviar os dados. -->
+
+        Senha:<br> 
+        <!-- Exibe o texto "Senha:" antes do campo de entrada da senha, seguido de uma quebra de linha -->
+
+        <input type="password" name="senha" id=""><br> 
+        <!-- Cria um campo para inserir a senha. O 'type="password"' faz com que os caracteres digitados fiquem ocultos. -->
+
+        <input type="button" value="Logar"> 
+        <!-- Cria um botão com o texto "Logar". Como é um botão do tipo "button", ele não faz nada por padrão. 
+        Para que funcione, seria necessário um código JavaScript para processar o login. -->
+
+    </form> 
+    <!-- Fecha o formulário -->
+
+    <h2>Cadastre-se</h2> 
+    <!-- Cria um novo título (h2) indicando que a próxima seção é para cadastro de usuários -->
+
+    <form action=""> 
+    <!-- Inicia um novo formulário para o cadastro de usuários -->
+
+        Login: <br> 
+        <!-- Exibe o texto "Login:" antes do campo de entrada do login, seguido de uma quebra de linha -->
+
+        <input type="text" name="login" id=""><br><br> 
+        <!-- Cria um campo de entrada de texto para o usuário digitar seu login. 
+        O '<br><br>' adiciona um espaçamento extra entre os campos. -->
+
+        Sexo: <br> 
+        <!-- Exibe o texto "Sexo:" indicando que os próximos campos são para a seleção do gênero do usuário -->
+
+        <input type="radio" name="sexo" value="M"> Masculino<br> 
+        <!-- Cria uma opção de seleção para "Masculino". O 'type="radio"' significa que apenas uma opção pode ser escolhida. 
+        O atributo 'name="sexo"' agrupa essa opção com a próxima, garantindo que apenas uma seja selecionada. -->
+
+        <input type="radio" name="sexo" value="F"> Feminino<br><br> 
+        <!-- Cria uma opção de seleção para "Feminino". Como o 'name="sexo"' é o mesmo da opção anterior, 
+        o usuário só pode escolher uma das duas opções. O '<br><br>' adiciona espaçamento extra. -->
+
+        Interesses: <br> 
+        <!-- Exibe o texto "Interesses:" para indicar que os próximos campos são opções de interesse do usuário -->
+
+        <input type="checkbox" name="interesses">Futebol<br> 
+        <!-- Cria uma caixa de seleção para o interesse "Futebol". O usuário pode marcar essa opção se gostar de futebol. -->
+
+        <input type="checkbox" name="interesses">Cursos<br> 
+        <!-- Cria uma caixa de seleção para "Cursos". Como é um checkbox, o usuário pode marcar várias opções. -->
+
+        <input type="checkbox" name="interesses">Moda<br><br> 
+        <!-- Cria uma caixa de seleção para "Moda", permitindo que o usuário selecione essa opção também. 
+        O '<br><br>' adiciona espaçamento extra antes do próximo campo. -->
+
+        Estado: <br> 
+        <!-- Exibe o texto "Estado:" indicando que o próximo campo será um menu suspenso (dropdown) com opções de estados -->
+
+        <select name="estado" id=""> 
+        <!-- Cria um menu suspenso onde o usuário pode selecionar um estado. O atributo 'name="estado"' indica que esse campo será identificado como "estado" ao enviar o formulário. -->
+
+            <option value="SP">SP</option> 
+            <!-- Cria uma opção no menu suspenso para São Paulo (SP). O atributo 'value="SP"' define o valor que será enviado ao selecionar essa opção. -->
+
+            <option value="RJ">RJ</option> 
+            <!-- Cria uma opção para Rio de Janeiro (RJ). -->
+
+            <option value="MG">MG</option> 
+            <!-- Cria uma opção para Minas Gerais (MG). -->
+
+            <option value="SC">SC</option> 
+            <!-- Cria uma opção para Santa Catarina (SC). -->
+
+        </select> 
+        <!-- Fecha o menu suspenso -->
+
+        <br><br> 
+        <!-- Adiciona espaçamento extra entre os campos -->
+
+        Observações: <br> 
+        <!-- Exibe o texto "Observações:" antes de um campo de texto onde o usuário pode escrever comentários ou informações adicionais -->
+
+        <textarea name="" id=""></textarea> 
+        <!-- Cria um campo de texto grande onde o usuário pode digitar observações. Ao contrário do input de texto, esse campo permite múltiplas linhas. -->
+
+        <br> 
+        <!-- Adiciona uma quebra de linha para espaçamento antes do botão de envio -->
+
+        <input type="submit" value="Cadastrar"> 
+        <!-- Cria um botão que envia os dados do formulário quando pressionado. Como 'type="submit"', 
+        ele enviará as informações preenchidas para o servidor especificado no atributo 'action' do formulário (que está vazio aqui). -->
+
+    </form> 
+    <!-- Fecha o formulário -->
+
+</body> 
+<!-- Fecha o corpo da página -->
+
+</html> 
+<!-- Fecha o documento HTML -->
