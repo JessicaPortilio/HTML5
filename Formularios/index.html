@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<!-- Declara que este é um documento HTML5 e define o idioma da página como inglês -->
+
+<head>
+    <meta charset="UTF-8"> 
+    <!-- Define a codificação de caracteres como UTF-8, permitindo o uso de caracteres especiais corretamente -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <!-- Define que a página será responsiva, ou seja, ajustará seu tamanho para diferentes dispositivos, como celulares e computadores -->
+
+    <title>Formulários</title> 
+    <!-- Define o título da página, que aparece na aba do navegador -->
+</head>
+
+<body> 
+    <!-- Início do corpo da página, onde o conteúdo visível será exibido -->
+
+    <h2>Login</h2> 
+    <!-- Cria um título de nível 2 (h2) chamado "Login" para indicar a seção do formulário -->
+
+    <form action=""> 
+    <!-- Inicia um formulário onde os usuários podem inserir seus dados. O atributo 'action' define para onde os dados serão enviados, 
+    mas neste caso está vazio, então os dados não serão processados por nenhum servidor. -->
+
+        Login:<br> 
+        <!-- Exibe o texto "Login:" para indicar o campo de entrada. O '<br>' pula uma linha para que o próximo elemento fique abaixo -->
+
+        <input type="text" name="login" id=""><br> 
+        <!-- Cria um campo de entrada de texto onde o usuário pode digitar seu login. 
+        O atributo 'name="login"' indica que este campo será identificado como "login" ao enviar os dados. 
+        O '<br>' pula uma linha para separar visualmente os elementos -->
+
+        Senha:<br> 
+        <!-- Exibe o texto "Senha:" para indicar o próximo campo de entrada, seguido por '<br>' para quebrar a linha -->
+
+        <input type="password" name="senha" id=""><br> 
+        <!-- Cria um campo de entrada para senha. O 'type="password"' faz com que os caracteres digitados fiquem ocultos (como bolinhas ou asteriscos).
+        O atributo 'name="senha"' indica que este campo será identificado como "senha" ao enviar os dados.
+        O '<br>' pula uma linha para separar visualmente os elementos -->
+
+        <input type="button" value="Logar"> 
+        <!-- Cria um botão com o texto "Logar". No entanto, esse botão não executa nenhuma ação porque é do tipo "button" 
+        e não está associado a um script que processe o login. Para um funcionamento adequado, seria necessário um botão "submit" 
+        ou um código JavaScript para validar os dados e enviá-los. -->
+
+    </form> 
+    <!-- Fecha o formulário -->
+</body> 
+<!-- Fecha o corpo da página -->
+
+</html> 
+<!-- Fecha o documento HTML -->
